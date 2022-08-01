@@ -43,5 +43,8 @@
 	"remoteUser": "vscode",
 	"features": {
 		"git": "os-provided"
-	}
+	},
+
+	"workspaceMount": "type=bind,source=${localWorkspaceFolder}/..,target=/workspace/,consistency=cached",
+	"workspaceFolder": "/workspace/${localWorkspaceFolderBasename}"
 }
